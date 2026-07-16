@@ -1,0 +1,328 @@
+<!-- BASE CONTAINER WITH HIGH-CONTRAST EXP BRAND STYLING -->
+<div id="exp-custom-portal" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #FFFFFF; color: #111625; line-height: 1.6; margin: 0; padding: 0;">
+
+  <!-- CSS OVERRIDES & STYLING -->
+  <style>
+    #exp-custom-portal h1, #exp-custom-portal h2, #exp-custom-portal h3, #exp-custom-portal h4 {
+      color: #080A1A;
+      font-weight: 700;
+      margin-top: 0;
+    }
+    #exp-custom-portal .btn-primary {
+      background-color: #0A3180 !important;
+      color: #FFFFFF !important;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 4px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+      text-align: center;
+    }
+    #exp-custom-portal .btn-primary:hover {
+      background-color: #061F52 !important;
+    }
+    #exp-custom-portal .btn-urgency {
+      background-color: #D32F2F !important; /* Urgent Red-Orange for Instant Action */
+      color: #FFFFFF !important;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 4px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+      text-align: center;
+    }
+    #exp-custom-portal .btn-urgency:hover {
+      background-color: #B71C1C !important;
+    }
+    #exp-custom-portal .btn-secondary-link {
+      color: #00A3E0;
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    #exp-custom-portal .btn-secondary-link:hover {
+      color: #0A3180;
+    }
+    #exp-custom-portal .section-padding {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    #exp-custom-portal .grid-2 {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: center;
+    }
+    #exp-custom-portal .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    #exp-custom-portal .blog-card {
+      background: #FFFFFF;
+      border: 2px solid #E2E3E4;
+      border-radius: 8px;
+      padding: 30px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    #exp-custom-portal .blog-card:hover {
+      transform: translateY(-5px);
+      border-color: #0A3180;
+    }
+    #exp-custom-portal .blog-expanded-section {
+      background-color: #F8F9FA;
+      border-top: 1px solid #E2E3E4;
+      padding: 60px 20px;
+    }
+    #exp-custom-portal .blog-post-full {
+      max-width: 800px;
+      margin: 0 auto 50px auto;
+      background: #FFFFFF;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border: 1px solid #E2E3E4;
+    }
+    #exp-custom-portal .contact-strip {
+      background-color: #F8F9FA;
+      border-bottom: 1px solid #E2E3E4;
+      padding: 10px 20px;
+      text-align: right;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    #exp-custom-portal .contact-strip a {
+      color: #0A3180;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    @media (max-width: 768px) {
+      #exp-custom-portal .grid-2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      #exp-custom-portal .section-padding {
+        padding: 40px 15px;
+      }
+      #exp-custom-portal .contact-strip {
+        text-align: center;
+      }
+      #exp-custom-portal .contact-strip a {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+  </style>
+
+  <!-- CONTACT STRIP -->
+  <div class="contact-strip">
+    <span>Let's Talk NYC Real Estate:</span>
+    <a href="tel:9293677653">📞 929-367-SOLD (7653)</a>
+    <a href="mailto:shalinthia.miles@exprealty.com">✉️ shalinthia.miles@exprealty.com</a>
+  </div>
+
+  <!-- 1. HERO SECTION (Human Element & High-Contrast) -->
+  <section style="background-color: #FFFFFF; border-bottom: 1px solid #E2E3E4;">
+    <div class="section-padding grid-2">
+      <div>
+        <h1 style="font-size: 40px; line-height: 1.2; margin-bottom: 20px;">
+          Navigating Complex NYC Assets.<br>
+          <span style="color: #0A3180;">Securing Maximum Value.</span>
+        </h1>
+        <p style="font-size: 18px; color: #111625; margin-bottom: 30px;">
+          "The NYC market rewards absolute accuracy. Let's take the anxiety out of pricing your home and design a clear, data-driven path to your next transition."
+        </p>
+        <div style="margin-bottom: 15px; display: flex; flex-wrap: wrap; gap: 15px;">
+          <!-- URGENT CALL TO ACTION -->
+          <a href="mailto:shalinthia.miles@exprealty.com?subject=Ready to List My NYC Property" class="btn-urgency">List Your Property With Me Now</a>
+          <a href="#market-signup" class="btn-primary">Get Your Pricing Strategy</a>
+        </div>
+        <div style="margin-top: 10px;">
+          <a href="#about" class="btn-secondary-link">Learn About My Bespoke Transition Strategies →</a>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <!-- PROFILE PICTURE -->
+        <img src="shalinthia-miles.png.png" 
+             alt="Shalinthia Miles - NYC Real Estate Partner" 
+             style="width: 100%; max-width: 320px; height: auto; border-radius: 12px; box-shadow: 0 15px 30px rgba(0,0,0,0.15); border: 4px solid #FFFFFF;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT & PRICING ANXIETY SECTION -->
+  <section id="about" style="background-color: #FFFFFF;">
+    <div class="section-padding" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 50px;">
+        <h2 style="font-size: 32px; margin-bottom: 20px;">Your Trusted Real Estate Partner</h2>
+        <p style="font-size: 20px; font-style: italic; color: #0A3180; line-height: 1.6; max-width: 800px; margin: 0 auto; font-weight: 500;">
+          "I help New York City property owners and investors navigate selling complex real estate assets, securing maximum value with zero friction. As a certified negotiation expert, I don't just list properties—I design bespoke real estate transition strategies."
+        </p>
+      </div>
+      
+      <hr style="border: 0; border-top: 1px solid #E2E3E4; margin: 40px 0;">
+
+      <div>
+        <h3 style="font-size: 26px; margin-bottom: 15px; color: #080A1A;">Eliminating The Friction of Home Sales</h3>
+        <p style="font-size: 16px; margin-bottom: 25px;">
+          In a high-stakes landscape where changing inventory levels and seasonal trends influence buyers daily, getting your pricing wrong is incredibly costly. If you are anxious about where to price your Manhattan co-op, Brooklyn townhouse, or outer-borough multifamily building, you are not alone. <strong>You shouldn't have to guess, and you shouldn't have to worry.</strong>
+        </p>
+        <p style="font-size: 16px; margin-bottom: 25px;">
+          We take the anxiety out of the equation by applying a meticulous, human-led approach to market value. We look beyond standard automated estimates to analyze specific board reserve standards, building line histories, and active buyer psychology on your exact block.
+        </p>
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="tel:9293677653" class="btn-primary">Call Shalinthia: 929-367-7653</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MARKET UPDATE SIGN-UP (Deep Navy Banner) -->
+  <section id="market-signup" style="background-color: #080A1A; color: #FFFFFF; border-top: 5px solid #0A3180;">
+    <div class="section-padding" style="text-align: center; max-width: 800px;">
+      <h2 style="color: #FFFFFF; font-size: 36px; margin-bottom: 15px;">Know Your Block's True Value</h2>
+      <p style="color: #E2E3E4; font-size: 18px; margin-bottom: 35px; line-height: 1.6;">
+        Automated valuation tools don't know your building's financial health, your custom upgrades, or week-by-week neighborhood trends. Receive curated, real-time market updates that actually tell you what your property is worth.
+      </p>
+      
+      <form style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; max-width: 600px; margin: 0 auto;">
+        <input type="email" placeholder="Your Email Address" required 
+               style="flex: 1; min-width: 250px; padding: 15px; border: 2px solid #E2E3E4; border-radius: 4px; font-size: 16px; color: #111625;" />
+        <input type="text" placeholder="Target NYC Neighborhood / Zip" required 
+               style="flex: 1; min-width: 200px; padding: 15px; border: 2px solid #E2E3E4; border-radius: 4px; font-size: 16px; color: #111625;" />
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">Send Me My Neighborhood Reports</button>
+      </form>
+      <p style="font-size: 14px; color: #A0AEC0; margin-top: 15px;">No obligation. No automated spam. Just direct, human-vetted insight.</p>
+    </div>
+  </section>
+
+  <!-- 4. WEEKLY BLOG SPOT (Index Grid) -->
+  <section id="weekly-blog" style="background-color: #FFFFFF;">
+    <div class="section-padding">
+      <div style="text-align: center;">
+        <h2 style="font-size: 32px; margin-bottom: 10px;">Weekly NYC Real Estate Intelligence</h2>
+        <p style="font-size: 16px; color: #58595B; max-width: 600px; margin: 0 auto;">
+          Stay informed with strategies written directly for NYC investors and homeowners navigating today's local economic climate.
+        </p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Card 1 -->
+        <div class="blog-card">
+          <span style="color: #0A3180; font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Seller Strategy</span>
+          <h4 style="font-size: 20px; margin: 10px 0 15px 0; color: #080A1A;">Why Outer-Borough Sellers Currently Hold the Cards</h4>
+          <p style="font-size: 15px; margin-bottom: 20px; color: #111625;">
+            While Manhattan inventory fluctuates, demand in Brooklyn and Queens neighborhoods remains highly competitive. Learn how to leverage this inventory squeeze.
+          </p>
+          <a href="#blog-post-1" class="btn-secondary-link" style="font-size: 14px;">Read Article ↓</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="blog-card">
+          <span style="color: #0A3180; font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Board Navigation</span>
+          <h4 style="font-size: 20px; margin: 10px 0 15px 0; color: #080A1A;">The Co-op Board Hurdle: Avoiding Deal Fallouts</h4>
+          <p style="font-size: 15px; margin-bottom: 20px; color: #111625;">
+            Getting an offer accepted is only half the race. Discover our pre-qualification vetting roadmap that ensures your buyer sails through board package reviews.
+          </p>
+          <a href="#blog-post-2" class="btn-secondary-link" style="font-size: 14px;">Read Article ↓</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="blog-card">
+          <span style="color: #0A3180; font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Market Analysis</span>
+          <h4 style="font-size: 20px; margin: 10px 0 15px 0; color: #080A1A;">Has NYC Found Its "New Normal" Price Ceiling?</h4>
+          <p style="font-size: 15px; margin-bottom: 20px; color: #111625;">
+            With mortgage rates stabilizing, wait-and-see buyers are returning to market. Find out how this impacts your equity if you plan to transition this season.
+          </p>
+          <a href="#blog-post-3" class="btn-secondary-link" style="font-size: 14px;">Read Article ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. EXPANDED BLOG CONTENT SECTION -->
+  <section class="blog-expanded-section">
+    
+    <!-- Full Post 1 -->
+    <article id="blog-post-1" class="blog-post-full">
+      <span style="color: #0A3180; font-weight: bold; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Seller Strategy</span>
+      <h2 style="font-size: 28px; margin: 10px 0 20px 0; line-height: 1.3;">Why Outer-Borough Sellers Currently Hold the Cards</h2>
+      <p>While Manhattan's luxury high-rises make international headlines, a quiet power shift has occurred in New York City’s outer boroughs. If you own a townhouse, brownstone, or multi-family property in Brooklyn (think Park Slope, Bed-Stuy, or Crown Heights) or Queens (Astoria, Forest Hills, or Long Island City), you are sitting on an incredibly valuable, supply-constrained asset.</p>
+      
+      <h4 style="margin-top: 25px; margin-bottom: 10px;">The Space Premium</h4>
+      <p>Post-pandemic lifestyle choices have permanently solidified the demand for private outdoor spaces, larger square footage, and multi-family configurations. Buyers are willing to pay a premium for a piece of land and a historic stoop.</p>
+      
+      <h4 style="margin-top: 25px; margin-bottom: 10px;">Severe Inventory Constraints</h4>
+      <p>Unlike new construction condo markets, there is a finite, un-replicable supply of historic brownstones and brick multi-family buildings. Buyers are competing over a shrinking pool of properties, which insulates your home's value against broader market dips.</p>
+      
+      <h4 style="margin-top: 25px; margin-bottom: 10px;">Strong Bid Resilience</h4>
+      <p>Local and cash-heavy buyers are targeting these outer-borough submarkets heavily. In many of these neighborhoods, well-priced, turn-key assets are still triggering competitive bidding wars.</p>
+      
+      <div style="background-color: #F8F9FA; border-left: 4px solid #0A3180; padding: 20px; margin-top: 30px;">
+        <strong style="color: #080A1A;">The Bottom Line:</strong> If you've been waiting to list your outer-borough property because you're unsure of market conditions, the localized data is heavily in your favor. Let's look at your neighborhood's latest comps and outline a bespoke positioning strategy to maximize your return.
+      </div>
+      <div style="margin-top: 30px; text-align: center;">
+        <a href="mailto:shalinthia.miles@exprealty.com?subject=Consultation on my Outer-Borough Property" class="btn-primary">Consult With Shalinthia On Your Property</a>
+      </div>
+    </article>
+
+    <!-- Full Post 2 -->
+    <article id="blog-post-2" class="blog-post-full">
+      <span style="color: #0A3180; font-weight: bold; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Board Navigation</span>
+      <h2 style="font-size: 28px; margin: 10px 0 20px 0; line-height: 1.3;">The Co-op Board Hurdle: Avoiding Deal Fallouts</h2>
+      <p>In New York City, finding a buyer who agrees to your price is only about 40% of the battle. The true gatekeeper of your equity is the Board Package. If a buyer's package is rejected, it doesn't just cost you time—it stigmatizes your listing on the public market, forcing you to explain to future prospects why the last deal fell through.</p>
+      
+      <h4 style="margin-top: 25px; margin-bottom: 10px;">To safeguard your sale, we utilize a strict pre-qualification roadmap:</h4>
+      <ol style="padding-left: 20px; line-height: 1.8;">
+        <li style="margin-bottom: 15px;"><strong>Vetting the Debt-to-Income (DTI) Ratio:</strong> Most NYC co-ops require a post-purchase DTI of 20% to 25%. We run these exact calculations on potential buyers before accepting their offer to ensure they aren't rejected at the eleventh hour.</li>
+        <li style="margin-bottom: 15px;"><strong>Reviewing Liquid Assets Post-Closing:</strong> Boards want to see that a buyer will have 1 to 2 years of maintenance fees completely liquid in their accounts after paying their down payment and closing costs.</li>
+        <li style="margin-bottom: 15px;"><strong>The Pre-Board Interview Review:</strong> We don't leave the board interview to chance. We prep your buyers meticulously, ensuring their board package is impeccably organized, professional, and beyond reproach.</li>
+      </ol>
+      
+      <div style="background-color: #F8F9FA; border-left: 4px solid #0A3180; padding: 20px; margin-top: 30px;">
+        <strong style="color: #080A1A;">The Bottom Line:</strong> Don't let a weak buyer lock up your property for three months only to fail board approval. Partner with a certified negotiation expert who knows exactly what boards look for.
+      </div>
+      <div style="margin-top: 30px; text-align: center;">
+        <a href="mailto:shalinthia.miles@exprealty.com?subject=Need Co-op Board Navigation Advice" class="btn-primary">Connect About Your Co-op Strategy</a>
+      </div>
+    </article>
+
+    <!-- Full Post 3 -->
+    <article id="blog-post-3" class="blog-post-full">
+      <span style="color: #0A3180; font-weight: bold; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Market Analysis</span>
+      <h2 style="font-size: 28px; margin: 10px 0 20px 0; line-height: 1.3;">Has NYC Found Its "New Normal" Price Ceiling?</h2>
+      <p>If you've been monitoring the news, you know that the "wait-and-see" game has been the dominant trend for both buyers and sellers over the last couple of years. But waiting for a dramatic drop in NYC home prices or a return to historic low mortgage rates is a strategy of diminishing returns.</p>
+      
+      <h4 style="margin-top: 25px; margin-bottom: 10px;">Pent-Up Demand is Unlocking</h4>
+      <p>With mortgage rates stabilizing in the low-6% range, the market has established a clear "New Normal." Buyers who sat out the market are tired of waiting. They have adjusted their budgets to current rate environments, and demand is quietly surging.</p>
+      
+      <h4 style="margin-top: 25px; margin-bottom: 10px;">Pricing Accuracy is Mandatory</h4>
+      <p>Buyers are highly educated. They will not overpay for unvetted properties, but they will move quickly on properties that are positioned cleanly and priced accurately from day one.</p>
+      
+      <h4 style="margin-top: 25px; margin-bottom: 10px;">Timing Your Equity Transition</h4>
+      <p>If you are planning to sell your property to buy another (whether trading up to a townhouse or downsizing), wait-and-see behavior can cost you buying power on your next purchase.</p>
+      
+      <div style="background-color: #F8F9FA; border-left: 4px solid #0A3180; padding: 20px; margin-top: 30px;">
+        <strong style="color: #080A1A;">The Bottom Line:</strong> The market isn't crashing; it's normalizing. By executing a pricing strategy that targets active buyer thresholds, you can confidently unlock your equity and transition smoothly into your next real estate chapter.
+      </div>
+      <div style="margin-top: 30px; text-align: center;">
+        <a href="mailto:shalinthia.miles@exprealty.com?subject=Ready to Value and List My Property" class="btn-urgency">List Your Property With Me Now</a>
+      </div>
+    </article>
+
+  </section>
+
+</div>
